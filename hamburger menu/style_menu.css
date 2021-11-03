@@ -74,7 +74,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -105,6 +105,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
 }
 /*top line*/
 .menu-wrap .hamburger > div::before,
@@ -121,4 +122,14 @@ body {
 /*bottom line*/
 .menu-wrap .hamburger > div::after {
   top: 10px;
+}
+
+/*toggler animation*/
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
 }
