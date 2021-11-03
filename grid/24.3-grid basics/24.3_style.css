@@ -1,6 +1,5 @@
 .container > div {
-  height: 200px;
-  /* width: 200px; */
+  height: 10vh;
   border: none;
   text-align: center;
   border-radius: 15px;
@@ -22,10 +21,12 @@
 .item1 {
   grid-area: item1;
   background-color: burlywood;
+  padding-top: 30px;
 }
 .item2 {
   grid-area: item2;
   background-color: cadetblue;
+  padding-top: 30px;
 }
 .item3 {
   grid-area: item3;
@@ -38,4 +39,17 @@
 .item5 {
   grid-area: item5;
   background-color: darkmagenta;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5";
+    grid-gap: 1rem;
+  }
 }
