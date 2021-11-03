@@ -3,3 +3,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secoundary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 051, 0.85);
+  --menu-speed: 0.75s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 960px;
+  margin: auot;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+#showcase {
+  background-color: var(--primary-color);
+  color: white;
+  height: 100vh;
+  position: relative;
+}
